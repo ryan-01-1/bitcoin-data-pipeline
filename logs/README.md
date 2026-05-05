@@ -1,0 +1,1 @@
+Logs com informações do pipeline
