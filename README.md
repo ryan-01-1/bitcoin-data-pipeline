@@ -17,13 +17,15 @@ Esse projeto implementa um pipeline ETL que coleta dados sobre criptomoedas de u
 
 ## Estrutura
 
-├── data/raw/			# Arquivos JSON/CSV originais da API
-├── data/processed/		# CSVs limpos e tipados prontos para análise
+├── data/
+   └── raw/			   # Arquivos JSON/CSV originais da API
+   └── processed/		# CSVs limpos e tipados prontos para análise
 ├── logs/				# Registros de execução (info, warning, error)
-├── src/extract			# Script de extração dos dados
-├── src/transform		# Script de transformação (limpeza, estruturação)
-├── src/load			# Script que salva os dados em CSV
-├── .env				# Credenciais sensíveis (não versionar)
+├── src/
+   └── extract			# Script de extração dos dados
+   └── transform		# Script de transformação (limpeza, estruturação)
+   └── load			   # Script que salva os dados em CSV
+├── .env				   # Credenciais sensíveis (não versionar)
 └── main.py				# Script principal de execução
 
 ## Como executar
