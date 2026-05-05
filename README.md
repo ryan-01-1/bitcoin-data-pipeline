@@ -1,32 +1,30 @@
 # Bitcoin Data Pipeline
 
-Coleta dados sobre criptomoedas de uma API do Coingecko, transforma, limpa e estrutura os dados, depois salva em CSV para análise posterior.
+Esse projeto implementa um pipeline ETL que coleta dados sobre criptomoedas de uma API do Coingecko, transforma, limpa, estrutura e depois salva em CSV para posteriormente ser analisado.
 
 ## Tecnologias
 
 * Python 3.10+
+* Python dot-env
 * Pandas
 * Requests
-* Logging
 
 ## Pipeline
 
 * Extract: coleta dados da API
-		|
-		V
 * Transform: limpa e estrutura os dados
-		|
-		V
 * Load: salva os dados em CSV
 
 ## Estrutura
 
-├── data/
-│   ├── raw/         # Arquivos JSON/CSV originais da API
-│   └── processed/   # CSVs limpos e tipados prontos para análise
-├── logs/            # Registros de execução (info, warning, error)
-├── .env             # Credenciais sensíveis (não versionar)
-└── pipeline.ipynb   # Script principal de execução
+├── data/raw/			# Arquivos JSON/CSV originais da API
+├── data/processed/		# CSVs limpos e tipados prontos para análise
+├── logs/				# Registros de execução (info, warning, error)
+├── src/extract			# Script de extração dos dados
+├── src/transform		# Script de transformação (limpeza, estruturação)
+├── src/load			# Script que salva os dados em CSV
+├── .env				# Credenciais sensíveis (não versionar)
+└── main.py				# Script principal de execução
 
 ## Como executar
 
@@ -34,8 +32,8 @@ Coleta dados sobre criptomoedas de uma API do Coingecko, transforma, limpa e est
    API_KEY=sua_chave_aqui
 2. Instalar dependências:
    ``bash
-   pip install python-dotenv requests pandas
-3. Executar o notebook
+   pip install requiriments.txt
+3. Executar o arquivo main.py
 
 ## Exemplo de dados
 
