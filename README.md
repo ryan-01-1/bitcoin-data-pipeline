@@ -17,24 +17,30 @@ Esse projeto implementa um pipeline ETL que coleta dados sobre criptomoedas de u
 
 ## Estrutura
 
-├── data/<br>
-   └── raw/			   # Arquivos JSON/CSV originais da API<br>
-   └── processed/		# CSVs limpos e tipados prontos para análise<br>
-├── logs/				# Registros de execução (info, warning, error)<br>
-├── src/<br>
-   └── extract			# Script de extração dos dados<br>
-   └── transform		# Script de transformação (limpeza, estruturação)<br>
-   └── load			   # Script que salva os dados em CSV<br>
-├── .env				   # Credenciais sensíveis (não versionar)<br>
-└── main.py				# Script principal de execução
+```bash
+bitcoin-data-pipeline/
+├── data/
+│   ├── raw/         # Dados brutos da API
+│   └── processed/   # Dados tratados prontos para análise
+├── logs/            # Logs de execução (info, warning, error)
+├── src/
+│   ├── extract.py   # Extração dos dados
+│   ├── transform.py # Limpeza e transformação
+│   └── load.py      # Salvamento dos dados
+├── .env             # Variáveis de ambiente (não versionar)
+└── main.py          # Script principal
+```
 
 ## Como executar
 
-1. Criar um arquivo `.env` com sua API key
+1. Criar um arquivo `.env` com sua API key<br>
+   ```bash
    API_KEY=sua_chave_aqui
-2. Instalar dependências:
-   ``bash
-   pip install requiriments.txt
+   ```
+3. Instalar dependências:<br>
+````bash
+pip install requiriments.txt
+````
 3. Executar o arquivo main.py
 
 ## Exemplo de dados
