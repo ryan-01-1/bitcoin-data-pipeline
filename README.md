@@ -34,9 +34,9 @@ bitcoin-data-pipeline/
 ## Como executar
 
 1. Criar um arquivo `.env` com sua API key<br>
-   ```bash
-   API_KEY=sua_chave_aqui
-   ```
+```bash
+API_KEY=sua_chave_aqui
+```
 3. Instalar dependências:<br>
 ````bash
 pip install requiriments.txt
