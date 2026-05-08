@@ -37,7 +37,7 @@ bitcoin-data-pipeline/
 ```bash
 API_KEY=sua_chave_aqui
 ```
-3. Instalar dependências:<br>
+2. Instalar dependências:<br>
 ````bash
 pip install requiriments.txt
 ````
