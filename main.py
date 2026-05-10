@@ -5,9 +5,10 @@ from src.load import load_data
 import os
 from dotenv import load_dotenv
 import traceback
+from pathlib import Path
 import logging
 
-log_file = 'C:\\Users\\ryan.leite\\bitcoin-data-pipeline\\logs\\pipeline.log'
+log_file = Path(__file__).parent / 'logs' / 'pipeline.log'
 
 logging.basicConfig(
     filename=log_file,
@@ -28,8 +29,8 @@ params = {
 }
 headers = {'x_cg_demo_api_key': api_key}
 
-caminho_csv_bruto = 'C:\\Users\\ryan.leite\\bitcoin-data-pipeline\\data\\raw\\bitcoin_bruto.csv'
-caminho_csv_tratado = 'C:\\Users\\ryan.leite\\bitcoin-data-pipeline\\data\\processed\\bitcoin_tratado.csv'
+caminho_csv_bruto = Path(__file__).parent / 'data' / 'raw' / 'bitcoin_bruto.csv'
+caminho_csv_tratado = Path(__file__).parent / 'data' / 'processed' / 'bitcoin_tratado.csv'
 
 def main():
   try:
