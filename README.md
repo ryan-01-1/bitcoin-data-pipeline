@@ -1,6 +1,6 @@
 # Bitcoin Data Pipeline
 
-Esse projeto implementa um pipeline ETL que coleta dados sobre criptomoedas de uma API do Coingecko, transforma, limpa, estrutura e depois salva em CSV para posteriormente ser analisado.
+Esse projeto implementa um pipeline ETL que coleta dados sobre criptomoedas de uma API da Coingecko, transforma, limpa, estrutura e depois salva em CSV para posteriormente ser analisado.
 
 ## Tecnologias
 
@@ -33,13 +33,13 @@ bitcoin-data-pipeline/
 
 ## Como executar
 
-1. Criar um arquivo `.env` com sua API key<br>
+1. Criar um arquivo `.env` na pasta raiz do projeto com sua API key<br>
 ```bash
 API_KEY=sua_chave_aqui
 ```
 2. Instalar dependências:<br>
 ````bash
-pip install requiriments.txt
+pip install -r requiriments.txt
 ````
 3. Executar o arquivo main.py
 
