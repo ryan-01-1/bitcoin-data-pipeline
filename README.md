@@ -39,7 +39,7 @@ API_KEY=sua_chave_aqui
 ```
 2. Instalar dependências:<br>
 ````bash
-pip install -r requiriments.txt
+pip install -r requirements.txt
 ````
 3. Executar o arquivo main.py
 
